@@ -1,5 +1,6 @@
 import React from "react"
 import TodoItem from "./TodoItem"
+import TodoFilters from "./TodoFilters"
 
 // List of todos
 function TodoList({
@@ -7,7 +8,9 @@ function TodoList({
   onToggleTodo,
   onDeleteTodo,
   activeCount,
-  onClearCompleted
+  onClearCompleted,
+  filter,
+  onFilterChange
 }) {
   return (
     <div className="todo-container">
@@ -29,6 +32,7 @@ function TodoList({
         <p className="left-items">
           <span>{activeCount}</span> items left
         </p>
+        <TodoFilters filter={filter} onFilterChange={onFilterChange} />
         <button className="clear-completed-btn" onClick={onClearCompleted}>
           Clear Completed
         </button>

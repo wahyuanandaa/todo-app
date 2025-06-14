@@ -3,7 +3,6 @@ import "./App.css"
 import TodoHeader from "./components/TodoHeader"
 import TodoForm from "./components/TodoForm"
 import TodoList from "./components/TodoList"
-import TodoFilters from "./components/TodoFilters"
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -68,12 +67,8 @@ function App() {
           activeCount={activeCount}
           onClearCompleted={clearCompleted}
           onReorder={reorderTodos}
-        />
-        <TodoFilters
           filter={filter}
           onFilterChange={setFilter}
-          activeCount={activeCount}
-          onClearCompleted={clearCompleted}
         />
         <p className="drag-help-info">Drag and drop to reorder list</p>
       </section>

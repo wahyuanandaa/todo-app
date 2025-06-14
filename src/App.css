@@ -54,26 +54,21 @@ a:hover {
 }
 
 .app {
-  width: 100%;
   min-height: 100vh;
-  background-image: var(--bg-img-mobile);
   background-color: var(--bg-color);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
 
 .wrapper {
-  width: 90%;
-  min-height: 90vh;
+  width: 100%;
+  max-width: 33.75rem;
+  margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
-  overflow: hidden;
+  gap: 1.5rem;
 }
 
 .wrapper > * {
@@ -176,6 +171,8 @@ form .add-todo {
 }
 
 .todo-container {
+  position: relative;
+  margin-top: -1.5rem;
   box-shadow: 1px 8px 10px var(--shadow-color), 2px 5px 7px var(--shadow-color),
     1px 7px 4px var(--shadow-color);
 }
@@ -294,6 +291,9 @@ form .add-todo {
   padding: 0.8rem 1rem;
   color: var(--inactive-color);
   font-size: 0.8rem;
+  background-color: var(--card-bg);
+  border-radius: 4px;
+  box-shadow: 1px 8px 10px var(--shadow-color);
 }
 
 .actions .left-items {
@@ -305,12 +305,8 @@ form .add-todo {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0.8rem 1rem;
   color: var(--inactive-color);
   font-size: 0.8rem;
-  background-color: var(--card-bg);
-  border-radius: 4px;
-  box-shadow: 1px 8px 10px var(--shadow-color);
 }
 
 .filter-btns {
@@ -342,9 +338,9 @@ form .add-todo {
 .drag-help-info {
   text-align: center;
   color: var(--text-color);
-  font-size: 0.8rem;
-  margin-top: 2rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  opacity: 0.8;
 }
 
 .clear-completed-btn {
@@ -426,21 +422,11 @@ form .add-todo {
   }
 
   .filters {
-    padding: 1rem;
     font-size: 0.9rem;
   }
 
-  /* Responsive filter positioning */
   .todo-container {
     position: relative;
-  }
-
-  .filters {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    margin-top: 1rem;
   }
 }
 
@@ -497,4 +483,22 @@ a:focus-visible {
 
 .skip-link:focus {
   top: 0;
+}
+
+/* Tambahkan media query untuk layar 1180px */
+@media all and (min-width: 1180px) {
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .left-items {
+    justify-self: start;
+  }
+
+  .clear-completed-btn {
+    justify-self: end;
+  }
 }
