@@ -37,8 +37,8 @@ Pengguna dapat:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/yourusername/todo-app)
-- Live Site URL: [Demo Site](https://your-todo-app-demo.com)
+- Solution URL: [GitHub Repository](https://github.com/wahyuanandaa/todo-app)
+- Live Site URL: [Demo Site](https://wahyuanandaa.github.io/todo-app/)
 
 ## Proses Pengembangan
 
@@ -125,5 +125,5 @@ Beberapa area yang ingin saya kembangkan lebih lanjut:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://github.com/yourusername)
+- Frontend Mentor - [@Wahyuanandaa](https://www.frontendmentor.io/profile/Wahyuanandaa)
+- GitHub - [@wahyuanandaa](https://github.com/wahyuanandaa)

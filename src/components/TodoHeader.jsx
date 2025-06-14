@@ -1,19 +1,19 @@
-import React from "react"
-
-function TodoHeader({ theme, onToggleTheme }) {
+export default function TodoHeader({ theme, onToggleTheme }) {
   return (
     <header>
       <h1>Todo</h1>
-      <button className={`btn theme-btn ${theme}`} onClick={onToggleTheme}>
+      <button className="btn theme-btn" onClick={onToggleTheme}>
         <img
           src={
-            theme === "light" ? "/images/icon-moon.svg" : "/images/icon-sun.svg"
+            theme === "light"
+              ? "./images/icon-moon.svg"
+              : "./images/icon-sun.svg"
           }
-          alt={theme === "light" ? "moon icon" : "sun icon"}
+          alt={
+            theme === "light" ? "Switch to dark theme" : "Switch to light theme"
+          }
         />
       </button>
     </header>
   )
 }
-
-export default TodoHeader
